@@ -47,7 +47,7 @@ $ git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git $
 
 * 설치
 ```bash
-brew install visual-studio-code
+$ brew install visual-studio-code
 ```
 
 * 설정 (플러그인 설치)
@@ -59,5 +59,42 @@ brew install visual-studio-code
 
 * 설치
 ```bash
-brew install subline-text
+$ brew install subline-text
 ```
+
+## Dropbox
+
+* 설치
+```bash
+$ brew install dropbox
+```
+
+
+## GNUPG
+
+* 설치
+```bash
+$ brew install gnupg
+```
+
+* 설정
+
+- 저장한 키 복원 
+```bash
+$ gpg —-import /path/to/secret-key-backup.asc  # 저장한 키 파일 
+
+$ gpg --edit-key 5A06ATD1F983B0A0 # Replace "name" with yours
+
+$ gpg> trust # Choose "ultimate" or other trust level
+$ gpg> save # Save the changes
+```
+
+- git config 설정
+```
+[gpg]
+	program = /opt/homebrew/bin/gpg  # gpg 설치 경로
+[commit]
+	gpgsign = true
+```
+
+
