@@ -98,3 +98,19 @@ $ gpg> save # Save the changes
 ```
 
 
+## Java & Jenv
+
+* 설치
+```bash
+$ brew tap mdogan/zulu
+$ brew install zulu-jdk8
+$ brew install zulu-jdk11
+$ brew install zulu-jdk17
+```
+
+* 설정
+```bash
+$ jenv add /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+$ jenv add /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+```
