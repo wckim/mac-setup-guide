@@ -90,11 +90,10 @@ $ gpg> save # Save the changes
 ```
 
 - git config 설정
-```
-[gpg]
-	program = /opt/homebrew/bin/gpg  # gpg 설치 경로
-[commit]
-	gpgsign = true
+```bash
+$ git config --global user.signingkey 5A06ATD1F983B0A0
+$ git config --global gpg.program /opt/homebrew/bin/gpg
+$ git config --global commit.gpgsign true
 ```
 
 
